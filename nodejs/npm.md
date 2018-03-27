@@ -18,7 +18,6 @@ git으로 관리할 때 `node_modules/` 폴더는 용량이 많아 github에 올
 
 ~~~json package.json
 {
-    // ...
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node index.js",
