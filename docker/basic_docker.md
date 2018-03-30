@@ -78,7 +78,6 @@
 - 하나의 이미지로 여러개의 컨테이너로 생성이 가능하며 컨테이너 안에서 파일을 만든다거나 어떤 것을 설치를 하면 이미지에 어떠한 영향을 주지 않고 컨테이너 안에 저장된다. 이렇게 새롭게 만들어진 컨테이너 자체를 다른 이미지로 만들 수 있다.
 
 # 참고 문서
-{% blockquote %}
+
 - <a href="http://blog.naver.com/PostView.nhn?blogId=woong17&logNo=220946125940&parentCategoryNo=&categoryNo=64&viewDate=&isShowPopularPosts=false&from=postView">도커(Docker)란?</a>
 - <a href="https://www.youtube.com/watch?v=Bhzz9E3xuXY&t=964s">생활코딩 docker</a>
-{% endblockquote %}
