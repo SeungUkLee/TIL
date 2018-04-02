@@ -20,11 +20,13 @@
 컨테이너를 생성하는 명령어는 run, create 2가지가 있다.
 
 1. docker run
+
 `# docker run -i -t ubuntu:14.04` 
 
 docker run 명령어는 컨테이너를 생성하고 실행하는 역할. run 명령어는 일과적으로 pull, create, start 명령어를 일과적으로 실행한후 attach 가능한 컨테이너이면 내부로 들어간다.
 
 2. docker create
+
 `# docker create -i -t --name myubnutu ubuntu:14.04`
 
 docker create 명령어는 컨테이너를 생성만 하고 내부로 들어가지 않는다.
