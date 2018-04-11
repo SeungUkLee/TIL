@@ -49,6 +49,7 @@ title=...&content=...
 리소스는 서버에 저장된 데이터, 즉 모델을 의미한다고 했다. API를 사용하는 클라이언트에게는 URL 로 표현하며 문맥에 따라 endpoint(엔드포인트)라는 표현을 사용하기도 한다.
 
 REST를 따르면 URL endpoint 는 **컬렉션** 과 **인스턴스**, 이렇게 2가지 종류밖에 없다.
+
 |  <center>형태</center> |  <center>리소스(엔드포인트)</center> |  <center>GET</center> |  <center>POST</center> |  <center>PUT</center> |  <center>DELETE</center> |
 |:--------|:--------|:--------|:--------|:--------|:--------|
 | 컬렉션 | /posts | 글 목록 | 글 저장 | X | X |
