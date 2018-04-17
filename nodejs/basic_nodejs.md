@@ -4,7 +4,7 @@
 - CommonJS를 구현한 모듈 시스템
 
 ## 이벤트 기반의 비동기 I/O 프레임워크
-![Alt text](nodejs_processing_model.png "그림1.Node.JS Processing Model")
+![Alt text](nodejs-processing-model.jpg "그림1.Node.JS Processing Model")
 
 클라이언트 쪽에서 어플리케이션으로 요청을 보낸다.
 node는 클라이언트 요청을 이벤트라는 것으로 만들어서 이벤트 큐에다가 쌓아놓는다.
