@@ -4,12 +4,12 @@
 자바스크립트의 자료형은 크게 **기본자료형**과 **객체형**으로 구분.
 
 * 기본 자료형 (Primitive data type)
- - `Boolean`
- - `null`
- - `undefined`
- - `Number`
- - `String`
- - `Symbol` (ES6에 추가됨) 
+  - `Boolean`
+  - `null`
+  - `undefined`
+  - `Number`
+  - `String`
+  - `Symbol` (ES6에 추가됨) 
 
 * 객체형 (Object type)
  - Object
