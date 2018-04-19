@@ -12,7 +12,7 @@
   - `Symbol` (ES6에 추가됨) 
 
 * 객체형 (Object type)
- - Object
+  - Object
 
  ### 기본 자료형
  기본자료형의 값은 **변경이 불가능한 값(immutable value)** 이며 **pass-by-value** 이다. 값들은 스택 영역에 고정된 메모리 영역을 점유하여 저장된다.
