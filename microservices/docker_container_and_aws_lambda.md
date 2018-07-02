@@ -3,6 +3,8 @@ AWS에서 마이크로 서비스 기반 아키텍쳐를 설계하고 빠르게 �
  - Docker containers on ECS/ECR
  - AWS Lambda functions (Serverless)
 
+------
+
 ## Docker Container
 AWS에서 EC2 Continaer Servcie (ECS) 와 EC2 Container Registry (ECR) 와 같은 컨테이너 관리를 위한 프레임워크를 제공한다.
 
@@ -49,7 +51,7 @@ AWS Lambda는 귀하에게 다음과 같이 비용을 청구한다.
 
 ## ECS Cluster vs AWS Lambda (feature by feature comparison [기능별 비교])
 
-1. Simplicity
+### 1. Simplicity
 
 단순성 측면에서 볼 때 ECS cluster 구성 및 유지 관리는 큰 도전일 수 있으며 containerization technology 대해 알아야한다. 반면 Lambda는 인프라 복잡성을 추상화하여 코드를 통해 전달되는 비즈니스 성과에 중점을 두고 있다.
 
@@ -59,7 +61,7 @@ AWS Lambda는 귀하에게 다음과 같이 비용을 청구한다.
 Score : ECS < Lambda
 
 
-2. Usage patterns
+### 2. Usage patterns
 
 예측할 수 없고 고도로 밀집된 트래픽 시나리오와 같은 상황에서 람다는 가장 비용 효율적이고 편리한 선택이다. 내장 된 auto-scaling 기능 덕분에 초기 계획이 필요 없다.
 
@@ -76,7 +78,7 @@ Score : ECS < Lambda
 Score : No winner. 비즈니스 usage pattern에 따라 다르다.
 
 
-3. Polyglotism
+### 3. Polyglotism
 
 Docker는 자연스럽게 다 언어 microservices를 지원한다. 반면에 Lambda functions는 AWS에서 현재 지원하는 것으로 제한된다.
 
@@ -84,7 +86,7 @@ Docker는 자연스럽게 다 언어 microservices를 지원한다. 반면에 La
 Score : ECS > Lambda
 
 
-4. Persistence
+### 4. Persistence
 
 ECS는 EBS 디스크를 클러스터를 구성하는 EC2 인스턴스에 연결할 수 있기 때문에 stateless 및  stateful services 를 모두 배포 할 수 있다.
 
@@ -93,7 +95,7 @@ ECS는 EBS 디스크를 클러스터를 구성하는 EC2 인스턴스에 연결�
 Score : ECS > Lambda
 
 
-5. User Interface
+### 5. User Interface
 
 AWS Lambda function은 엄격하게 백엔드 종류에 속한다. Lambda를 기반으로 Microservices 를 위한 프론트 엔드를 제작해야한다면, [SoundCloud](https://www.thoughtworks.com/insights/blog/bff-soundcloud)에서 성공적으로 구현 된 [Backend for Frontend](https://samnewman.io/patterns/architectural/bff/) 패턴을 사용할 수 있다.
 
@@ -102,7 +104,7 @@ AWS Lambda function은 엄격하게 백엔드 종류에 속한다. Lambda를 기
 Score : AWS는 여기에 패배.
 
 
-6. Governance
+### 6. Governance
 
 Lambda에서는 각 microservice 관계를 효과적으로 시행한다. One Function = One API. 입력 매개 변수를 기반으로 특정 도메인 서비스 버전으로 라우팅하는 함수를 만들 수 있지만 AWS에 업로드 할 수 있는 코드 크기 제한에 빠르게 도달하게 된다. (패키지에 포함된 모든 종속성 포함).
 
@@ -113,7 +115,7 @@ spec 및 consumer contracts 관리와 관련하여 Lambda는 Swagger 또는 RAML
 Score : ECS > Lambda
 
 
-7. Portability
+### 7. Portability
 
 Docker는 컨테이너화를 위한 사실상의 표준이므로 필요에 따라 서비스를 다른 Docker 기반 orchestration platforms에 쉽게 포팅 할 수  있다.
 
@@ -121,7 +123,7 @@ Docker는 컨테이너화를 위한 사실상의 표준이므로 필요에 따�
 반면에 Lambda는 microservice를 AWS 플랫폼과 긴밀하게 연결한다. 재사용 가능한 "cloud-agnostic" 클라이언트 라이브러리 뒤에 모든 AWS API 호출을 캡슐화하면 coupling을 최소화 할 수 있다. 이는 권장하는 솔루션이지만 일반적으로 추가 비용과 유지 보수 노력이 필요하다.
 
 
-8. Long running processes
+### 8. Long running processes
 
 Lambda function 호출은 5분 이상 걸릴 수 없다. - 더 복잡한 작업은 SEDA에 따라 더 작은 파이프 lambda function으로 분할해야한다.
 
@@ -131,19 +133,38 @@ Lambda function 호출은 5분 이상 걸릴 수 없다. - 더 복잡한 작업�
 Score : No Winner
 
 
-9. Resource heavy processes
+### 9. Resource heavy processes
 
 Single Lambda function 실행을 위해 최대 1.5GB의 RAM을 할당 할 수 있다. ECS의 경우 RAM, CPU 및 네트워크 대역폭은 처리 능력의 폭을 제공하는 기본 EC2 리소스에 의해서만 제한된다. 
 
 
-10. Communication style
+### 10. Communication style
 
 Cross-lambda communication은 RPC이다. 이 경우 caching  또는 hypermedia controls을 포함하여 RESP의 이점을 누릴 수 없다. 솔직히 거의 아무도 기계 대 기계 (machine-to-machine) 인터페이스에서 hypermedia를 사용하지는 않는다. 기존 REST 구현의 대부분은 HTTP wire를 통해 전송된 JSON을 기반으로하는 RPC이다. 그래도 REST를 사용하려면 ECS에 배포 된 microservices로 이 작업을 수행 할 수 있다.
 
 
-11. New vs. existing services
+### 11. New vs. existing services
 
 각각 새로운 기능을 위해 microservice에 정착하는 것은 마틴 파울러가 만들어 낸 risk-driven "monolith first" 접근법과 상충 될 수 있다. 이 모델은 관리가 불가능한  integration knot of nanoservices을 만들 가능성을 최소화하는 것을 목표로 한다.
+
+production 환경에서 새로운 기능이 어떻게 작동하는지를 알게되었으면 Lambda 또는 Docker를 사용할 수 있다. 결과적으로 "strangler 패턴"을 사용하여 코드의 일부를 monolith 구조에서 분리할 수 있다. 그런 다음, microservices로 이동하려는 legacy applications 경우, 선택시 시스템 모듈을 Lambda 기능으로 재구성하는 것보다 "Dockerize" 하는 것이 더 경제적일 수 있다.
+
+
+Score : 동점. 새로운 microservices를 만들기 전에 항상 risk-oriented 인 태도를 취하는게 좋다.(고용할 기술과 무관.)
+
+
+## 결론
+
+AWS에서 Microservices를 구현하는데 있어 어렵고 빠른 방법은 없다. 다음 사항에 따라 아무꺼나 선택하면 된다.
+
+- 조직의 통제 욕구
+- 사용 가능한 운영 자원(resources)
+- 서비스의 비즈니스 usage pattern
+- 서비스의 lifecycle stage : 새로운 서비스(녹색 필드) 또는 legacy (갈색 필드)
+- front-end architecture
+
+요약하면, 가장 합리적인 방법은 **두 가지** 장점 모두를 접근하여 채택하는 것이다. Lambda 와 Docker on ECS/ECR 를 혼합하여 단기간/장기간의 위험을 정기적으로 모니터링하여 상당한 비용 절감 효과를 기대할 수 있다.
+
 -------
 
 ## Reference
