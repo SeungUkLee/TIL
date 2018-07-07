@@ -140,7 +140,7 @@ Single Lambda function 실행을 위해 최대 1.5GB의 RAM을 할당 할 수 �
 
 ### 10. Communication style
 
-Cross-lambda communication은 RPC이다. 이 경우 caching  또는 hypermedia controls을 포함하여 RESP의 이점을 누릴 수 없다. 솔직히 거의 아무도 기계 대 기계 (machine-to-machine) 인터페이스에서 hypermedia를 사용하지는 않는다. 기존 REST 구현의 대부분은 HTTP wire를 통해 전송된 JSON을 기반으로하는 RPC이다. 그래도 REST를 사용하려면 ECS에 배포 된 microservices로 이 작업을 수행 할 수 있다.
+Cross-lambda communication은 RPC이다. 이 경우 caching  또는 hypermedia controls을 포함하여 REST의 이점을 누릴 수 없다. 솔직히 거의 아무도 기계 대 기계 (machine-to-machine) 인터페이스에서 hypermedia를 사용하지는 않는다. 기존 REST 구현의 대부분은 HTTP wire를 통해 전송된 JSON을 기반으로하는 RPC이다. 그래도 REST를 사용하려면 ECS에 배포 된 microservices로 이 작업을 수행 할 수 있다.
 
 
 ### 11. New vs. existing services
