@@ -143,3 +143,6 @@ func Filter(s []int, fn func(int) bool) []int {
 }
 ~~~
 
+## Refernce
+
+[Go Slices: usage and internals](https://blog.golang.org/go-slices-usage-and-internals).
