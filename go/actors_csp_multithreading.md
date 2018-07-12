@@ -46,7 +46,8 @@ CSP model은 한 대의 machine에서 가장 잘 작동하는 반면에 Actors m
 Actors model은 분산 시스템에 더 적합하다. CSP는 blocking 하는 특성 때문에 여러 machines / runtimes 에서 사용하기가 어렵다.
 
 
-
+## Reference
+[Parallelism models. Actors vs CSP vs Multithreading](https://medium.com/@ostvp/parallelism-models-actors-vs-csp-vs-multithreading-f1bab1a2ed6b).
 
 
 
