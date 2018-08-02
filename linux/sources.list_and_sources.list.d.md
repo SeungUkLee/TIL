@@ -11,3 +11,8 @@ $man sources.list
 
 
 즉, 해당 디렉토리의 모든 파일이 main sources list 와 함께 merge 되고 저장소 모음을 함께 구성한다는 의미이다. 모든 저장소를 하나의 파일에 넣을 수 있지만 목록을 여러 파일에 분산하면 유지 관리의 이점이 있다. 저장소를 비활성화하려면 main list 를 조작할 필요없이 파일을 제거하면되고 이는 자동화에 좋다. 
+
+## Reference
+[Debian sources.list.d Versus sources.list](https://stackoverflow.com/questions/22968952/debian-sources-list-d-versus-sources-list).
+
+[SourcesList](https://wiki.debian.org/SourcesList).
