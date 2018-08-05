@@ -57,3 +57,7 @@ go f(x, y, z)
 * 채널은 그 자체로 포인터와 비슷한 레퍼런스형이라고 할 수 있다.
 
 
+
+## Reference
+
+[[GO] 고루틴](http://brownbears.tistory.com/313?category=195244)
