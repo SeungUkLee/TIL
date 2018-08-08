@@ -39,7 +39,7 @@ sudo apt-get update && sudo apt-get install elasticsearch
 
 ## Running Elasticsearch with SysV init
 
-`update-rc.d` 명령을 통햏 재부팅해도 ElasticSearch 가 자동으로 시작되도록 할 수 있다.
+`update-rc.d` 명령을 통해 재부팅해도 ElasticSearch 가 자동으로 시작되도록 할 수 있다.
 
 ~~~
 sudo update-rc.d elasticsearch defaults 95 10
@@ -77,9 +77,9 @@ Aug 02 02:35:14 ip-172-31-29-3 systemd[1]: elasticsearch.service: Unit entered f
 Aug 02 02:35:14 ip-172-31-29-3 systemd[1]: elasticsearch.service: Failed with result 'exit-code'.
 ~~~
 
-사용하고 있는 서버의 메모리를 늘리거나 `/etc/elasticsearch/jvm.options` 에서 -Xms1g -Xmx1g 를 -Xm512m 으로 설정을 수정하면 해결이 될 수도 있다.  
+사용하고 있는 서버의 메모리를 늘리거나 `/etc/elasticsearch/jvm.options` 에서 -Xms1g -Xmx1g 를 -Xmx512m 으로 설정을 수정하면 해결이 될 수도 있다.  
 
-[Log when cannot allocate memory]( https://github.com/elastic/elasticsearch/issues/15315) 사이트를 참고해보니 인스턴스 메모리 보다 ElasticSearch 에서 시작할 때 사용하는 메모리가 더 커서 실행이 되지 않는 것 같아 사이트를 참고하여 위와 같은 방법으로 해결하였다.
+[Log when cannot allocate memory]( https://github.com/elastic/elasticsearch/issues/15315) 사이트를 참고해보니 사용하고 있는 aws 인스턴스 메모리(1GB) 보다 ElasticSearch 에서 시작할 때 사용하는 메모리가 더 커서 실행이 되지 않는 것 같아 사이트를 참고하여 위와 같은 방법으로 해결하였다.
 
 
 ## Reference
