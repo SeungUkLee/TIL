@@ -41,8 +41,58 @@ for i, vector in enumerate(vector_list * 3):
 - positional arguments : 위치에 따라 정해지는 인자
 - keyword arguments : 키워드(이름)을 가진 인자.
 
+### positional arguments 만 받을 때
+
+~~~ python
+def positional_args(*args):
+    print(args)
+
+positional_args('lee', 'alic', 'tom', 'uk')
+# ('lee', 'alic', 'tom', 'uk')
+~~~
+
+
+### keyword arguments 만 받을 때
+
+~~~ python
+def keyword_args(**kwargs):
+    print(kwargs)
+
+keyword_args(a='lee', b='alic', c='tom', d='uk')
+# {'d': 'uk', 'a': 'lee', 'b': 'alic', 'c': 'tom'}
+~~~
+
+
+### positional arguments 와 keyword arguments 를 모두 받을 때
+
+~~~ python
+def positional_and_keyword_args(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+positional_and_keyword_args('lee', 'alic', c='tom', d='uk')
+# ('lee', 'alic')
+# {'d': 'uk', 'c': 'tom'}
+~~~
+
+`*args` 는 임의의 갯수의 **positional arguments** 를 받는다라는 의미이며, `**kwargs` 는 임이의 갯수의 **keyword arguments** 를 받는다라는 의미이다. 이 때 `*args`, `**kwargs` 형태로 가변인자를 받는 걸 **packing** 이라고 한다.
+
+positional 형태로 전달하는 인자들은 `args` 라는 **tuple** 형태로 저장되며, keyword 형태로 전달되는 인자들은 `kwargs` 라는 **dict** 형태로 저장된다.
 
 ## 4. 컨테이너 타입의 데이터를 Unpacking 할 때
+
+컨테이너 타입의 데이터를 **unpacking** 하는 경우에도 사용할 수 있다. 
+
+~~~ python
+primes = [2, 3, 5, 7, 11, 13]
+def product(*numbers):
+    print(numbers) 
+
+product(*primes) # (2, 3, 5, 7, 11, 13)
+product(primes)  # ([2, 3, 5, 7, 11, 13],)
+~~~
+
+`product()` 함수는 가변인자를 받고 있기 때문에 변수 `primes` 의 데이터를 모두 unpacking 하여 함수에 전달해야한다. 이럴 경우 `*primes` 와 같은 형태로 전달하여 데이터의 모든 값들이 numbers 에 저장된다.
 
 ## Ref
 
