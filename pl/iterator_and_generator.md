@@ -5,12 +5,18 @@ Container, Iterable, Iterator, Generator, Generator expression, list set dict co
 
 ![Alt text](generator_iterator_iterable_container.jpg "generator & iterator & iterable & container")
 
-generator expression 과 generator function은 generator  이다.
+generator expression 과 generator function은 generator 이다.
+
 generator는 항상 iterator 다.
+
 next() 메소드로 lazy 하게 값을 생산 할 수 있다.
+
 iterator는 항상 iterable 이다.
-iterable은 iter() 메소드로 iterator 를 구할 수 있다 (?)
+
+iterable은 iter() 메소드로 해당 iterable 을 순차적으로 순회할 수 있는 iterator 를 생성할 수 있다.
+
 {list, set, dict} comprehension 은 container를 생산한다.
+
 container는 일반적으로 iterable 하다.
 
 ## Container (컨테이너)
