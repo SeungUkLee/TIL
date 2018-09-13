@@ -3,7 +3,7 @@ Container, Iterable, Iterator, Generator, Generator expression, list set dict co
 
 전체적으로 다음과 같은 관계를 가지고 있다.
 
-![Alt text](generator_iterator_iterable_container.jpg "generator & iterator & iterable & container")
+![Alt text](iterable_iterator_generator.png "iterable_iterator_generator")
 
 generator expression 과 generator function은 generator 이다.
 
