@@ -79,3 +79,9 @@
 - **Push** : Shift + Cmd + K 
 - **Pull** : Shift + Cmd + A => git pull 
 - **Github 연동하기** : Shift + Cmd + A => share GitHub
+
+
+## Ref
+[Intellij IDEA 단축키](https://jongmin92.github.io/2018/07/31/Tip/intellij-shortcut/)
+
+[인프런 - IntelliJ를 시작하시는 분들을 위한  IntelliJ 가이드](https://www.inflearn.com/course/intellij-guide/)
