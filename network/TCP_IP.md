@@ -30,7 +30,7 @@ IP 를 통해 컴퓨터를 찾아 통신할 수 있겠지만 아직 끝이 아�
 ### TCP/IP 4계층
 OSI 7계층이 너무 계층화되어있어 몇 개 계층들끼리 통합한 것이다. TCP/IP 4계층은 OSI 7계층을 기반으로 하고 있다.
 
-![Alt text](TCP-IP-4-layer.png "TCP/IP 4계층")
+![Alt text](image/TCP-IP-4-layer.png "TCP/IP 4계층")
 
 - **물리 계층** : 시스템을 연결하기 위한 전기/물리적 규격을 정의.
 - **데이터 링크 계층** : 시스템 간의 (Point to Point) 신뢰성 있는 전송을 보장하기 위한 계층.
@@ -44,11 +44,11 @@ OSI 7계층이 너무 계층화되어있어 몇 개 계층들끼리 통합한 �
 
 모든 인터넷 통신은 반드시 TCP/IP 4계층을 거쳐야 한다.
 
-![Alt text](network-communication.png "네트워크 통신 흐름")
+![Alt text](image/network-communication.png "네트워크 통신 흐름")
 
 위 그림의 핵심은 자신이 속한 계층만 신경을 쓰면 된다는 점이다. 응용 계층에 속했다면 응용 계층끼리, 전송 계층끼리 속했다면 전송 계층만 신경 쓴다. 
 
 웹 클라이언트는 HTTP 에 맞추어 웹서버에 페이지를 요청한다. 이 데이터가 전송 계층으로 전달되면 TCP/IP 를 이용하여 인터넷을 건널 준비를 한다. 이렇게 물리 계층인 랜카드까지 도달하면 비로소 인터넷을 통해 서버로 이동하게 된다. 서버는 이 반대의 과정을 거치면서 응용 계층까지 데이터가 전송된다. 이 떄 클라이언트 쪽에서 **Encapsulation(캡슐화)** 과정을 거쳐 웹서버로 보내고 웹서버에서는 **Decapsulation** 과정을 통해 클라이언트 요청(데이터)를 받게 된다.
 
-![Alt text](encapsulation.png "encapsulation")
-![Alt text](decapsulation.png "decapsulation")
+![Alt text](image/encapsulation.png "encapsulation")
+![Alt text](image/decapsulation.png "decapsulation")
