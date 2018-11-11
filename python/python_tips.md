@@ -155,9 +155,6 @@ from operator import itemgetter
 print(sorted(fruit.items(), key=itemgetter(1))) # ('tomato', 2), ('banana', 7), ('apple', 10), ('orange', 14)]
 
 print(sorted(fruit, key=a.get))  # ['tomato', 'banana', 'apple', 'orange']
-~~~ python
-
-print(sorted(a.items(), key=itemgetter(1)))
 ~~~
 
 ## For Else
