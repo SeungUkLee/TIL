@@ -50,7 +50,7 @@ $ source ~/.zshrc
 그런다음 jenv 관리 항목에 추가.
 
 ~~~ shell
-jjenv add /Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/
+$ jenv add /Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/
 ~~~
 
 > 각 버전의 상세 버전은 조금씩 다를 수 있음.
