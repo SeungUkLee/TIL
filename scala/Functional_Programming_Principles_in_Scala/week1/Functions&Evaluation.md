@@ -48,3 +48,34 @@ mutable variables 를 피하고, 함수를 추상화하고 함수를 합성하�
 - 단순한 추론 원리가 가능해짐.
 - 모듈화가 더 잘됨.
 - 멀터코어와 클라우드 컴퓨팅에서 병령성을 잘 활용할 수 있다.
+
+## 1.2 Elements of Programming
+
+### Expression
+
+많은 프로그래밍 언어들은 다음과 같은 기능들을 제공한다.
+- primitive expressions, representing the simplest elements (언어의 가장 간단한 요소를 나타내는)
+- ways to combine expressions (expression을 결합하는 방법)
+- ways to abstract expressions, which introduce a name for an expression by which it can then be referred to. (expression을 추출하는 방법)
+
+여기서 추출이란 expression 의 이름을 소개한 다음 그 이름으로 expression 을 참조할 수 있다라는 것을 의미한다.
+
+### Evaluation
+
+non-primitive expression 은 최종적으로 value 를 만들기 전까지 다음과 같은 방식으로 evaluated 된다
+
+- Take the leftmost operator
+- Evaluate its operands (left before right)
+- Apply the operator to the operands
+
+그러나 모든 expression 이 finite value 를 가지는 것은 아니다. 여기서 loop 는 무한루프를 말한다.
+
+~~~ scala
+def loop: Int = loop
+~~~
+
+## Reference
+
+[FUNCTIONAL PROGRAMMING 1](http://1ambda.github.io/scala/functional-programming-1/)
+
+[Coursera's Functional Programming in Scala](https://www.coursera.org)
