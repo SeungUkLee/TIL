@@ -79,6 +79,19 @@ CircleCI API 를 통해 테스트하고 유효성을 검사할 수 있다. scrip
     - Source for project
     - Project name
     - Branch from which to build
+5. 이 값들을 쉘 스크립트에 추가한다. 
+
+~~~ shell
+#!/usr/bin/env bash
+curl --user ${CIRCLE_TOKEN}: \
+    --request POST \
+    --form revision=<commit hash>\
+    --form config=@config.yml \
+    --form notify=false \
+        https://circleci.com/api/v1.1/project/<source, eg. github>/<user name>/<project name>/tree/<branch name>
+~~~
+
+이제 셸 스크립트를 실행하고 repo를 밀어 넣지 않고도 `config.yml` 파일을 디버깅 할 수 있다.
 
 ----
 
