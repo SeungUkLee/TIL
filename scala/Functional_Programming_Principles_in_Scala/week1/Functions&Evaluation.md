@@ -74,6 +74,15 @@ non-primitive expression 은 최종적으로 value 를 만들기 전까지 다�
 def loop: Int = loop
 ~~~
 
+## 1.3 Evaluation Strategies and Termination
+
+evaluation of expression 의 형식적인 모델(a formal model) 을 보았다.
+이 모델이 **substitution model** 이다. 그리고 evaluation of expression 방법(표현식을 평가하는)으로 2가지가 있다.
+
+1. call by value
+2. call by name
+
+
 ## Reference
 
 [FUNCTIONAL PROGRAMMING 1](http://1ambda.github.io/scala/functional-programming-1/)
