@@ -2,8 +2,8 @@
 
 ## 1. Clone the Apache Zeppelin repository
 
-Github에 Zeppelin 저장소(https://github.com/apache/zeppelin
-)로 가서 프로젝트를 자신의 PC에 다운로드 받는다. 
+Github에 [Zeppelin 저장소](https://github.com/apache/zeppelin
+) 로 가서 프로젝트를 자신의 PC에 다운로드 받는다. 
 
 `$ git clone https://github.com/apache/zeppelin.git`
 
