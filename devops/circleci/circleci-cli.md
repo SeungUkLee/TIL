@@ -99,3 +99,4 @@ curl --user ${CIRCLE_TOKEN}: \
 [Using the CircleCI Local CLI
 ](https://circleci.com/docs/2.0/local-cli/)
 
+[Testing Config Files Locally](https://circleci.com/docs/2.0/examples/#section=configuration)
