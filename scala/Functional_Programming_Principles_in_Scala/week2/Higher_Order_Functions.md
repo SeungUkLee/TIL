@@ -7,3 +7,8 @@ type `A => B` 는 function type 이다. 이는 인자로 type A 를 받고 type 
 ## Anonymous Functions
 매개변수의 type 은 컴파일러가 컨텍스트에서 유추할 수 있는 경우 생략할 수 있다.
 
+## Reference
+
+[FUNCTIONAL PROGRAMMING 2](http://1ambda.github.io/scala/functional-programming-2/)
+
+[Coursera's Functional Programming in Scala](https://www.coursera.org)

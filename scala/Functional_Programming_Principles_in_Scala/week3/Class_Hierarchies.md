@@ -75,3 +75,9 @@ class Sub extends Base {
 
 `object` 키워드를 사용하여 **singleton object** 를 만들 수 있다.
 singleton object 은 value 이다. 따라서 그 자체로 evaluate 된다. 즉, evalutaion 단계를 수행할 필요가 없다. 
+
+## Reference
+
+[FUNCTIONAL PROGRAMMING 3](http://1ambda.github.io/scala/functional-programming-3/)
+
+[Coursera's Functional Programming in Scala](https://www.coursera.org)
