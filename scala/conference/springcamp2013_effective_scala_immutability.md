@@ -166,3 +166,6 @@ val result = addOne(col)
 ### 결론(불변성 정리)
 - 함수에서 참조 투명성이 깨지지않도록 잘 지켜주는 것이 좋다
 - 함수를 일반적인 하나의 값으로 사용하자
+
+## Reference
+[SpringCamp2013 - Effective Scala](https://www.youtube.com/watch?v=WbV467V8o0w)

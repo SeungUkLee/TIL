@@ -219,3 +219,6 @@ case class StringValue(x: String) extends Value {
 ## 결론
 - 스칼라는 그냥 자바처럼 짜도 되지만 스칼라의 진정한 강점은 **멀티 패러다임** 에 있다.
 - 함수형 스타일의 특징인 **Immutability(불변성)** 과 스칼라만의 특징인 **Composability(구성성)** 을 고려하며 디자인하면 아름답고 확장성 높은 프로그램을 만들 수 있다.
+
+## Reference
+[SpringCamp2013 - Effective Scala](https://www.youtube.com/watch?v=WbV467V8o0w)
