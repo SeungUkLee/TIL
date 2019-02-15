@@ -1,4 +1,17 @@
 # Kubernetes Basic
+
+* [Master and Node]()
+* [Object](#object)
+    * [Object Spec](#object)
+    * [Basic Object](#object)
+        * [Pod](#pod)
+        * [Volume](#volume)
+        * [Service](#service)
+        * [Namespace](#namespace)
+    * [Label](#label)
+* [Reference](#reference)
+
+
 쿠버네티스의 개념은 크게 오브젝트 두개의 개념에서 출발한다.
 
 ----
@@ -150,7 +163,7 @@ spec:
 - selector에서 라벨이 app:myapp인 Pod만 선택
 - 포트는 TCP를 이용하고 service는 80포트로 서비스하되 80 포트의 요청을 컨테이너의 9376 포트로 연결하여 서비스를 제공
 
-#### Namespcae
+#### Namespace
 
 한 쿠버네티스 클러스터내의 **논리적인 분리단위**
 
@@ -175,7 +188,7 @@ Pod, Service 등은 네임스페이스 별로 생성, 관리될 수 있고 사�
 
 ----
 
-### Label (라벨)
+### Label
 Service를 설명하면서 잠깐 언급되었지만 다시 정리하자면 라벨은 쿠버네티스의 리소스를 선택하는데 사용된다. 
 
 라벨의 특징을 정리하자면 다음과 같다.
