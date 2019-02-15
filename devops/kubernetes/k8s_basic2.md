@@ -24,7 +24,7 @@ Replication Controller(RC)는 지정된 숫자로 Pod를 기동 시키고 관리
 - **Pod Template** : Pod를 추가로 기동할 때 어떻게 Pod를 만들지 Pod에 대한 정보(docker image, port, label 등)를 Pod template 부분에 정의
 
 
-![RC](image/RC.png)
+![RC](image/rc.png)
 
 
 주의할점은 이미 실행되고 있는 Pod가 있는 상태에서 RC 리소스를 생성할때 그 Pod의 라벨이 RC의 라벨과 일치하면 새롭게 생성된 RC의 컨트롤을 받는다. 만약 해당 Pod들이 RC에서 정의한 replica 수 보다 많으면, replica 수에 맞게 pod를 삭제하고, 부족하면 template에 정의된 Pod 정보에 따라서 새로운 Pod를 생성하는데, 기존에 생성되어 있는 Pod가 template에 정의된 스펙과 다를지라도 그 Pod를 삭제하지 않는다. 예를 들어 기존에 아파치 웹서버로 기동중인 Pod가 있고, RC의 template은 nginx로 Pod를 실행하게 되어 있다하더라도 기존에 돌고 있는 아파치 웹서버 기반의 Pod를 삭제하지 않는다. 
