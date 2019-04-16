@@ -140,3 +140,9 @@ public Program getProgramAt(TVGuide guide, int channel, Date when) {
 
 함수형 프로그래밍 언어는 부작용없는 프로그래밍을 지원하고 장려하는 언어이다. 즉, 함수형 언어는 우리가 가능한한 부작용을 제거하고 그렇지 않은 곳에는 철저히 제어할 수 있도록 적극적으로 도와주는 언어, 부작용에 적대적인 언어이다.
 
+## Reference
+- [함수형 프로그래밍이란 무엇인가?](https://medium.com/@jooyunghan/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-fab4e960d263)
+
+- [What Is Functional Programming?](http://blog.jenkster.com/2015/12/what-is-functional-programming.html)
+
+- [let us: Go! 2017 가을 - Functional Reactive Programming 패러다임](https://www.youtube.com/watch?v=cXi_CmZuBgg&feature=youtu.be)
