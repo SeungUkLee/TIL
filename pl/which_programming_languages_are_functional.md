@@ -19,6 +19,24 @@
 
 **함수형 프로그래밍은 부작용에 관한 것이다.**
 
+## What Does This Mean For Languages?
+
+### JavaScript
+
+### Java
+
+### Scala
+
+### Clojure
+
+### Haskell
+
+### Python
+
+### Mocking
+
+## Design Smells
+
 ## Reference
 - [Which Programming Languages Are Functional?](http://blog.jenkster.com/2015/12/which-programming-languages-are-functional.html)
 - [어떤 프로그래밍 언어들이 함수형인가?](https://medium.com/@jooyunghan/%EC%96%B4%EB%96%A4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EB%93%A4%EC%9D%B4-%ED%95%A8%EC%88%98%ED%98%95%EC%9D%B8%EA%B0%80-fec1e941c47f)
