@@ -203,4 +203,4 @@ CI 서비스에서 git 태그를 이용해서 릴리스할 수 있다. Github �
 
 ## Reference
 
-[나도 할 수 있다 오픈 소스! — setup.py에서 PyPI까지](https://www.youtube.com/watch?v=4wEFo7L2zRc&t=504s)
+[나도 할 수 있다 오픈 소스! — setup.py에서 PyPI까지](https://www.yougitube.com/watch?v=4wEFo7L2zRc&t=504s)
