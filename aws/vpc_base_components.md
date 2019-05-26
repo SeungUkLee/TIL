@@ -28,3 +28,16 @@
 ## Reference
 
 [만들면서 배우는 AWS VPC 입문 아마존 웹 서비스 네트워크의 기초](https://www.44bits.io/ko/post/understanding_aws_vpc#%EA%B8%B0%EB%B3%B8-vpc%EC%9D%98-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C%EB%93%A4)
+
+## 더 참고할 거
+
+[PRIVATE SUBNET 으로 서비스 구성하기](http://linux.systemv.pe.kr/aws-private-subnet-%EC%9C%BC%EB%A1%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0/)
+
+[AWS를 위한 네트워크 용어 정리 - CIDR와 서브넷](https://gompro.postype.com/post/2491387)
+
+[AWS Lambda 고오급 튜토리얼 - 3](https://velog.io/@leejh3224/AWS-Lambda-%EA%B3%A0%EC%98%A4%EA%B8%89-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-3-rzjn6mvcdb)
+
+[AWS VPC를 디자인해보자(1) ~ (4)](https://bluese05.tistory.com/45)
+
+[AWS VPC basic](https://blog.2dal.com/2017/09/12/aws-vpc-basic/)
+
