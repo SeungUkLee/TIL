@@ -261,7 +261,7 @@ FOptional<Integer> tryParse(String s) {
 
 Functor 에다가 `tryParse` 함수를 전달하는 순간 문제가 생긴다.
 
-![map2](./images/map2.png)
+![map2](./images/functor3.png)
 
 일반적으로 앞에서 보았던 예제는 `FOptional<String>` 이었는데 `parseInt` 라는 메소드를 전달해서 반환값이 `Integer` 이기때문에 `FOptional<Integer>` 가 된다.
 
