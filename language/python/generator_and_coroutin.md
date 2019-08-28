@@ -1,4 +1,4 @@
-# Generator & Coroutine
+# Generator & Coroutine
 파이썬에서 코루틴은 다음과 같이 두가지가 있다.
 
 - 네이티브 코루틴
