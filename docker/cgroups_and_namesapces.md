@@ -49,7 +49,7 @@ LXC, LibContainer, runC 등은 cgroups, namespaces 를 표준으로 정의해동
 
 도커는 1.11 버전부터 아래 그림과 같은 구조로 작동하고 있다.
 
-![docker](docker_structure.png)
+![docker](docker-structure.png)
 
 > 그림 출처 : https://tech.ssut.me/what-even-is-a-container/
 
