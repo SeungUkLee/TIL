@@ -30,7 +30,6 @@
 mutable 데이터 타입을 사용하면 객체를 새로 생성하지 않아도 되며, 메모리 누수를 방지하면서 메모리 사용 효율을 올릴 수 있다. 
 
 
-
 ## class vs instance
 
 ``` python
@@ -57,7 +56,7 @@ class BookReader:
 		print(self.name, 'is reading in', self.country)
 ```
 
-클래스 변수 country 값을 변경
+클래스 변수 `country` 값을 변경
 
 ``` python
 c = BookReader('cho')
@@ -107,7 +106,7 @@ class SKBookReader:
 
 ## global vs local vs non-local
 
- [https://docs.python.org/3/tutorial/classes.html#scopes-and-namespaces-example](https://docs.python.org/3/tutorial/classes.html#scopes-and-namespaces-example) 
+[https://docs.python.org/3/tutorial/classes.html#scopes-and-namespaces-example](https://docs.python.org/3/tutorial/classes.html#scopes-and-namespaces-example) 
 
 ``` python
 def scope_test():
