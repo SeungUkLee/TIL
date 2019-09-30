@@ -58,9 +58,9 @@ mapIntList :: (Int -> Int) -> IntList -> IntList
 mapIntList _ Empty = Empty
 mapIntList f (Cons x xs) = Cons (f x) (mapIntList f xs)
 
-mapIntList addOne exampleList
-mapIntList abs    exampleList
-mapIntList square exampleList
+example1 = mapIntList addOne exampleList
+example2 = mapIntList abs    exampleList
+example3 = mapIntList square exampleList
 
 main = do
     print example1;
@@ -91,7 +91,7 @@ keepOnlyEven (Cons x xs)
 
 `mapIntList` 는 `Int` 리스트만 처리한다. 다른 타입을 처리하는 함수를 만들고 싶으면 새 함수를 정의해야하는데 함수 구현이 거의 동일하다. 다른 점은 **type signature** 뿐이다.
 
-하스켈은 데이터 타입과 함수에 대한 **polymorphism(다형성)**을 지원한다. 프로그래밍 언어에서 다형성이라는 말은 여러 타입에 대해 작동한다는 뜻이다.
+하스켈은 데이터 타입과 함수에 대한 **polymorphism(다형성)** 을 지원한다. 프로그래밍 언어에서 다형성이라는 말은 여러 타입에 대해 작동한다는 뜻이다.
 
 > polymorphic (다형적인)이란 "여러 형태를 지니는" 이라는 의미이다
 
