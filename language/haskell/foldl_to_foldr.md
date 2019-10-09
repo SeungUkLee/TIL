@@ -91,3 +91,13 @@ foldl f acc xs = (foldr f' acc') xs acc
 ```
 
 가 된다.
+
+## References & Further More
+
+[Foldl을 Foldr로 정의하기 - YouTube](https://www.youtube.com/watch?v=vYYTLcSJ8ns)
+
+[foldl을 foldr로 구현](https://birmjin.tumblr.com/post/111213326517/foldl%EC%9D%84-foldr%EB%A1%9C-%EA%B5%AC%ED%98%84) 
+
+[Foldl as foldr alternative - HaskellWiki](https://wiki.haskell.org/Foldl_as_foldr_alternative)
+
+[Foldl as foldr](https://wiki.haskell.org/Foldl_as_foldr) 
