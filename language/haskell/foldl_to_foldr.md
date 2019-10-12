@@ -86,7 +86,7 @@ foldl f acc xs = (foldr f' acc') xs acc
 따라서 
 
 ```haskell
-foldl f acc xs = (foldr f' acc') xs acc
+foldl f acc xs = (foldr f' id) xs acc
                 where f' x y = \acc -> y (f acc x)
 ```
 
