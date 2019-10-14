@@ -70,8 +70,21 @@ val listMonoid[A] = new Monoid[List[A]] {
 >
 > 일부 데이터 타입들에 작용하는 함수들과 그 함수들 사이의 관계를 명시하는 일련의 법칙이라고 할 수 있다.
 >
-> [공리와 정리 참고]
 >
 > [공리? 정리? 정의?](http://blog.naver.com/PostView.nhn?blogId=rodem_math&logNo=220290844317&parentCategoryNo=&categoryNo=53&viewDate=&isShowPopularPosts=true&from=search)
 >
 > [정의와 공리 그리고 정리](https://suhak.tistory.com/243)
+
+> 항등원
+>
+> 집합 `A`가 연산 `*` 에 대하여 닫혀있을때 `A`의 임의의 원소 `a`에 대하여 `a * e = e * a = a` 가 되는 원소 `e` (집합 A의 원소)는 연산 `*` 에 대한 항등원이다.
+>
+> "어떤 연산에 관하여 닫혀있다" 라는 말은 수의 집합 `A`에서 임의의 원소 `a`, `b`에 대하여 `a * b` 가 집합 `A` 의 임의의 원소이면 `A`는 `*` 에 관하여 닫혀있다라고 한다.
+>
+> ex) 
+>
+> 자연수 집합은 "더하기 (+)" 연산에 관하여 닫혀있다.
+>
+> 자연수 집합은 "빼기 (-)" 연산에 관하여 닫혀있지 않다.
+>
+> [합성함수와 역함수 - 항등함수, 역함수 vs 항등원, 역원](http://blog.naver.com/PostView.nhn?blogId=at3650&logNo=40119536193)
