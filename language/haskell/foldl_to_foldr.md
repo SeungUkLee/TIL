@@ -42,7 +42,7 @@ h' [] = id
 h' (x:xs) acc = \acc -> h' xs (f acc x)
 ```
 
-이때 `\acc -> acc` 는 항등원(idenetity)이기 때문에 `id` 이다.
+이때 `\acc -> acc` 는 identity function (항등함수) 이기 때문에 `id` 로 표현할 수 있다.
 
 다시 정리하면,
 

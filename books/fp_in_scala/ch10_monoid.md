@@ -69,3 +69,9 @@ val listMonoid[A] = new Monoid[List[A]] {
 > 공리는 항상 참이라고 간주되는 명제, 정리 역시 참으로 간주되는 명제이다.
 >
 > 일부 데이터 타입들에 작용하는 함수들과 그 함수들 사이의 관계를 명시하는 일련의 법칙이라고 할 수 있다.
+>
+> [공리와 정리 참고]
+>
+> [공리? 정리? 정의?](http://blog.naver.com/PostView.nhn?blogId=rodem_math&logNo=220290844317&parentCategoryNo=&categoryNo=53&viewDate=&isShowPopularPosts=true&from=search)
+>
+> [정의와 공리 그리고 정리](https://suhak.tistory.com/243)
