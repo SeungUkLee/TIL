@@ -223,3 +223,19 @@ instance Functor ((->) e) where
 ```
 
 와우! 이것은 무엇을 의미할까? type `(e -> a)` 의 value 을 생각하는 한 가지 방법은 `e` 의 각 value 에 대해 `a` value 가 하나인 "e-indexed container" 이다. 이러한 컨테이너의 모든 value 에 대해 function 을 map 하는 것은 function composition 과 정확히 일치한다. 적용하여 원래 컨테이너에서 `a`를 선택한 다음 `(a -> b)` 함수를 적용하여 선택했던 element 를 변환한다.
+
+## Reference & Further More
+
+[Haskell's kind system - a primer](https://diogocastro.com/blog/2018/10/17/haskells-kind-system-a-primer/#fn:void)
+
+[inhabited set](https://ncatlab.org/nlab/show/inhabited+set)
+
+[Difference between a type and a set](https://math.stackexchange.com/questions/489369/difference-between-a-type-and-a-set)
+
+[Kind - HaskellWiki](https://wiki.haskell.org/Kind)
+
+[Type inhabitation - wiki](https://en.wikipedia.org/wiki/Type_inhabitation)
+
+[Kind(type theory) - wiki](https://en.wikipedia.org/wiki/Kind_(type_theory))
+
+[Container(type theory) - wiki](https://en.wikipedia.org/wiki/Container_(type_theory))
