@@ -109,7 +109,7 @@ Prelude> :k Funny
 Funny :: (* -> *) -> * -> *
 ```
 
-`Funny` 는 2개의 arguments 를 가진다. 첫번째로 kind `* -> *`, 그리고 두번쨰로 kind `*`. (ghci 는 `Funny` 의 kind 를 어떻게 알까? 그것은 type inference 처럼 kind inference 를 한다). `Funny` 는`map` 이 higer-order function 인 것 처럼 higher-order type constructor 이다. 
+`Funny` 는 2개의 arguments 를 가진다. 첫번째로 kind `* -> *`, 그리고 두번쨰로 kind `*`. (ghci 는 `Funny` 의 kind 를 어떻게 알까? 그것은 type inference 처럼 kind inference 를 한다). `Funny` 는`map` 이 higher-order function 인 것 처럼 higher-order type constructor 이다. 
 
 > Note
 >
@@ -148,14 +148,14 @@ class Functor f where
 >
 > `Functor` 는 Prelude 에 이미 정의되어 있으며 "functor" 라는 이름은 카테고리 이론에서 비롯된 것으로 C++ 의 functors 와 같지 않다 (기본적으로 first-class functions 이다). 
 
-이제 우리는 f 로 다양한 클래스를 정의할 수 있다. `Functor` 클래스는 types of kind `* -> *` 을 추상화(abstract)한다. 따라서 작성하는 것은 의미없다.
+이제 우리는 f 로 다양한 클래스를 정의할 수 있다. `Functor` 클래스는 types of kind `* -> *` 을 추상화(abstract)한다. 따라서 밑에 처럼 코드를 작성하는 것은 의미없다.
 
 ```haskell
 instance Functor Int where
 	fmap = ...
 ```
 
-실제로 위와같이 작성하면 *kind mismatch error* 가 발생하는 것을 볼 수 있다.
+실제로 위와 같이 코드를 작성하면 *kind mismatch error* 가 발생하는 것을 볼 수 있다.
 
 ```
 [1 of 1] Compiling Main             ( 09-functors.lhs, interpreted )
@@ -222,4 +222,4 @@ instance Functor ((->) e) where
 	fmap = (.)
 ```
 
-와우! 이것은 무엇을 의미할까? type `(e -> a)` 의 value 을 생각하는 한 가지 방법은 `e` 의 각 value 에 대해 하나의 value 를 가진 "e-indexed container" 이다. 이러한 컨테이너의 모든 값에 대해 함수를 map 하는 것은 함수 composition 과 정확히 일치하다. 변환된 컨테이너에서 element 를 선택하려면 먼저 `(e -> a)` 함수를 적용하여 원래 컨테이너에서 `a` 를 선택한 다음 `(a -> b)` 함수를 적용하여 선택한 element 를 변환한다.
+와우! 이것은 무엇을 의미할까? type `(e -> a)` 의 value 을 생각하는 한 가지 방법은 `e` 의 각 value 에 대해 `a` value 가 하나인 "e-indexed container" 이다. 이러한 컨테이너의 모든 value 에 대해 function 을 map 하는 것은 function composition 과 정확히 일치한다. 적용하여 원래 컨테이너에서 `a`를 선택한 다음 `(a -> b)` 함수를 적용하여 선택했던 element 를 변환한다.
