@@ -2,6 +2,8 @@
 
 ## 1부
 
+[나는 프로그래머다 케빈채널 e03 - 함수형 프로그래머를 찾아서 - 한주영 1부](https://podcasts.apple.com/kr/podcast/%EC%BC%80%EB%B9%88%EC%B1%84%EB%84%90-e03-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%A5%BC-%EC%B0%BE%EC%95%84%EC%84%9C-%ED%95%9C%EC%A3%BC%EC%98%81-1%EB%B6%80/id1082628193?i=1000380187610)
+
 [24:40 ~ ]
 
 스칼라를 FP 쪽으로 사용하려고 하다보면은 하스켈보다 표현하기 어려운 부분이 생긴다(개념적인 부분도). 예를 들어서 하스켈의 Algebra Data Type 에 대응하는 것이 스칼라에서는 sealed trait 과 case class 이다. 차이점은 하스켈로 보자면 타입 노출은 trait 만 되고 case class 는 타입이 아니라 데이터이기 때문에 외부에 타입으로 노출이 안된다.
@@ -36,6 +38,8 @@ Natural transformation -> morphism of functors
 ---
 
 ## 2부
+
+[‎나는 프로그래머다 케빈채널 e03 - 함수형 프로그래머를 찾아서 - 한주영 2부](https://podcasts.apple.com/kr/podcast/%EC%BC%80%EB%B9%88%EC%B1%84%EB%84%90-e03-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%A5%BC-%EC%B0%BE%EC%95%84%EC%84%9C-%ED%95%9C%EC%A3%BC%EC%98%81-2%EB%B6%80/id1082628193?i=1000380521776)
 
 **함수형 프로그래밍의 장, 단점**
 
@@ -117,6 +121,8 @@ Lazy evaluation 이 적용된 Lazy stream 의 동작방식이 사실은 코루�
 
 ## 3부
 
+[나는 프로그래머다 케빈채널 e03 - 함수형 프로그래머를 찾아서 - 한주영 3부](https://podcasts.apple.com/kr/podcast/%EC%BC%80%EB%B9%88%EC%B1%84%EB%84%90-e03-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%A5%BC-%EC%B0%BE%EC%95%84%EC%84%9C-%ED%95%9C%EC%A3%BC%EC%98%81-3%EB%B6%80/id1082628193?i=1000381334635)
+
 [16:10 ~]
 
 함수형 프로그래밍은 추상화에 굉장히 신경을 많이 쓴다.
@@ -154,6 +160,8 @@ Higher Kined Type 은 어떻게 설명하면 좋을까? 우선 Kind 와 Type 을
 ---
 
 ## 4부
+
+[‎나는 프로그래머다 케빈채널 e03 - 함수형 프로그래머를 찾아서 - 한주영 4부](https://podcasts.apple.com/kr/podcast/%EC%BC%80%EB%B9%88%EC%B1%84%EB%84%90-e03-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%A5%BC-%EC%B0%BE%EC%95%84%EC%84%9C-%ED%95%9C%EC%A3%BC%EC%98%81-4%EB%B6%80/id1082628193?i=1000381764666)
 
 **Monad** 란?
 
@@ -251,6 +259,8 @@ Free Monad 로 기술한 어떤 오퍼레이션은 사실 굉장히 pure 한 명
 ---
 
 ## 5부 (마지막)
+
+[‎나는 프로그래머다 케빈채널 e03 - 함수형 프로그래머를 찾아서 - 한주영 5부 (마지막)](https://podcasts.apple.com/kr/podcast/%EC%BC%80%EB%B9%88%EC%B1%84%EB%84%90-e03-%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EB%A5%BC-%EC%B0%BE%EC%95%84%EC%84%9C-%ED%95%9C%EC%A3%BC%EC%98%81-5%EB%B6%80-%EB%A7%88%EC%A7%80%EB%A7%89/id1082628193?i=1000381948619)
 
 Free Monad 를 이야기하면 트램폴링에 대해서 이야기가 나온다. 이것은 스칼라에서 구현하다 보니 JVM 의 한계 때문에 트램폴링이 필요해져서 나온것이다. (계속 합성하여 스택오버플로우가 발생하기 때문에). Free Monad로 적용되서 어떤 명령의 트리가 만들어지면  그 명령의 트리를 나중에 인터프리터가 실행시켜줘야되는데 인터프리터가 실행시킬때 트리가 크면 클 수록 스택오버플로우가 발생할 수 있기 때문에 이 부분을 트램폴링을 적용해야된다. 자세한 내용은 다음 페이퍼를 참고하자 - [Stackless Scala With Free Monads](http://blog.higher-order.com/assets/trampolines.pdf)
 
