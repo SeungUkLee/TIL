@@ -15,6 +15,14 @@ Natural transformation -> morphism of functors
 쉽게 말하자면 데이터를 바꾸는 것이 아니라 데이터 밖 Functor 를 바꾸는 것, 껍데기를 바꿈
 
 
+> [functor](http://blog.naver.com/PostView.nhn?blogId=hancury&logNo=220617498423&parentCategoryNo=&categoryNo=24&viewDate=&isShowPopularPosts=false&from=postList)
+> 글에 의하면
+> 
+> Natural Transformation은 간단히 말해 functor를 functor로 보내는 morphism이다, Natural Transformation을 설명하기위해 Functor란 개념을 만들고, Functor를 설명하기 위해 Category란 개념을 만들었다고 한다
+>
+> 추가적으로 [Monad is just EndoFunctor Monoid, What's the Problem?](http://blog.naver.com/PostView.nhn?blogId=hancury&logNo=220511679144&categoryNo=25&parentCategoryNo=0&viewDate=&currentPage=3&postListTopCurrentPage=1&from=postList&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=3) 의 5.Natural transformation 부분도 같이 보면 좋을 것 같다.
+
+
 ### Further more
 
 * [개미 수열을 푸는 10가지 방법](https://leanpub.com/programming-look-and-say)
