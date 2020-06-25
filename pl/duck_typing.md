@@ -14,4 +14,10 @@ Nominal Type System 과 Structural Type System 의 내용을 보다가 문득 st
   
   **동적**이며 **런타임 중에 액세스되는 타입 구조의 해당 부분만**으로 타입 compatibility (호환성)을 결정
 
+---
 
+## Reference
+
+[wikipedia - duck typing](https://en.wikipedia.org/wiki/Duck_typing#:~:text=Duck%20typing%20in%20computer%20programming,determined%20by%20an%20object's%20type.)
+
+[Nominal Typing VS Structural Typing ( + Duck Typing)](https://steemit.com/kr-dev/@ethanhur/nominal-typing-vs-structural-typing-duck-typing)
