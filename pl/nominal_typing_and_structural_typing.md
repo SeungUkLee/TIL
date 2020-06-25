@@ -1,4 +1,4 @@
-# Nominal Typing
+# Nominal Typing and Structural Typing
 
 data type 의 compatibility (호환성) 및 equivalence (동등성)은 explicit declarations (명시적 선언) 및(or 또는) type 의 이름으로 결정되는 타입 시스템.
 대표적으로 Java, C# 언어가 이 방식으로 타입 체킹한다.
@@ -60,6 +60,6 @@ y = x // NO
 
 [위키피디아 - Nominal type system](https://en.wikipedia.org/wiki/Nominal_type_system#:~:text=In%20computer%20science%2C%20a%20nominal,the%20name%20of%20the%20types.)
 
-
+[Medium - Type systems: structural vs nominal](https://medium.com/@thejameskyle/type-systems-structural-vs-nominal-typing-explained-56511dd969f4#:~:text=Languages%20like%20OCaml%2C%20Haskell%2C%20and,have%20primarily%20structural%20type%20systems.&text=%7Dlet%20foo%3A%20Foo%20%3D%20new%20Bar()%3B%20%2F%2F%20Okay.,structure%20is%20exactly%20the%20same.)
 
 
