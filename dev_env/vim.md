@@ -87,7 +87,7 @@ imap a b;
 imap c a;
 ```
 
-최종적으로 b 를 누른 것으로 인식 -> 의도치 않은 동작을 야기시킴
+`c` 를 누르면 최종적으로 `b` 를 누른 것으로 인식 -> 의도치 않은 동작을 야기시킴
 
 즉, `noremap` 은 not recursion 하기 때문에 키 설정면에서 편하다.
 
@@ -143,7 +143,7 @@ insert 모드로 들어가는 것은 빨간색으로 표기되어있다.
 Vim 은 Modal Edting (모달 에디팅) 을 구현해놓은 구현체 레퍼런스 에디터에 불구하다.
 모달 에디팅의 철학은 모든 에디터에 구현이 가능하다. 그래서 vscode 와 vim 은 vs관계가 아니라 협력관계이다. vscode 에서 vim plugin 을 사용하면 modal edting 의 철학을 vscode 에 심어줄 수 있다.
 
-사실상 vim 스터디 x, modal editing 강의. vim 은 그냥 구현체일뿐. 중요한건 modal edting. 조금 더 쉽게 말하자면
+vim 은 그냥 구현체일뿐. 중요한건 modal edting. 조금 더 쉽게 말하자면
 vim key mapping 을 여기저기 에디터에 깔아서 사용하려고 배우는 것이다.
 
 왜? modal editing 을 통해 생산성 증진 및 타이핑 피로도 개선을 얻기위해서.
