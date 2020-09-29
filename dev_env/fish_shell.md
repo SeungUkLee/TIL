@@ -351,7 +351,7 @@ vim
 
 ## Reference & Further more
 
-[피쉬 쉘(Fish Shell) 한글화 문서 [비공식]](9https://j2doll.github.io/fish-shell-docs-kor/tutorial/)
+[피쉬 쉘(Fish Shell) 한글화 문서 [비공식]](https://j2doll.github.io/fish-shell-docs-kor/tutorial/)
 
 [fish-shell documentation](https://fishshell.com/docs/current/index.html)
 
