@@ -128,7 +128,7 @@ insert 모드로 들어가는 것은 빨간색으로 표기되어있다.
 
 아래 그림이 조금 더 직관적으로 정리가 잘 되어있다.
 
-![vim-commands](./images/vim-commands.jpg)
+![vim-commands](./images/vim-cheat-sheet.png)
 
 그림 출처 : [Vim quickies/ cheatsheet](https://dev.to/rubiin/vim-quickies-cheatsheet-30gm)
 
