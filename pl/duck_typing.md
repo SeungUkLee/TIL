@@ -16,8 +16,16 @@ Nominal Type System 과 Structural Type System 의 내용을 보다가 문득 st
 
 ---
 
-## Reference
+> Structural typing means that types with the same members are interchangeable - ...
+> ...
+> This approach, which is sometimes called **"static duck typing"**, ...
+>
+> Ref [Typescript From a Scala Programmer's Perspective](https://www.bright.global/en/blog/typescript-from-scala-programmer-perspective)
+
+## Reference & Further more
 
 [wikipedia - duck typing](https://en.wikipedia.org/wiki/Duck_typing#:~:text=Duck%20typing%20in%20computer%20programming,determined%20by%20an%20object's%20type.)
 
 [Nominal Typing VS Structural Typing ( + Duck Typing)](https://steemit.com/kr-dev/@ethanhur/nominal-typing-vs-structural-typing-duck-typing)
+
+[golang 으로 만나보는 Duck Typing](https://www.popit.kr/golang%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%82%98%EB%B3%B4%EB%8A%94-duck-typing/)
